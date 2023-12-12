@@ -39,12 +39,9 @@ h1 {
 .logo {
   text-align: center;
 }
-.wolke1 {
-  animation: move2 10s ease;
-}
 
-.wolke2 {
-  animation: move 10s ease;
+.wolke {
+  max-width: 350px;
 }
 
 /*------------SEARCHBAR----------*/
@@ -150,5 +147,25 @@ input {
 @keyframes flyin {
   0% {
     transform: translateX(-800px);
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    display: block;
+  }
+
+  input {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .wolke1 {
+    animation: move2 10s ease;
+  }
+
+  .wolke2 {
+    animation: move 10s ease;
   }
 }
