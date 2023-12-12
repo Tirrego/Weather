@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/76ad6589c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>BetterWeather❤️</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="wolke1">
+          <img src="8918181.png" alt="" width="400" height="300" />
+        </div>
+        <div class="logo">
+          <h1>Better<span>Weather</span></h1>
+          <h2>We love weather</h2>
+        </div>
+        <div class="wolke2">
+          <img src="8918181.png" alt="" width="400" height="300" />
+        </div>
+      </header>
+      <div class="serachBar">
+        <form action="" name="form">
+          <input type="search" placeholder="City or Zipcode...." />
+          <i class="fa-solid fa-magnifying-glass fa-beat-fade fa-lg"></i>
+        </form>
+      </div>
+
+      <div class="content disable">
+        <div class="card">
+          <div class="date">
+            <p>
+              <span id="month">12.12.2023</span><span id="city">Frankfurt</span>
+            </p>
+          </div>
+          <div class="weatherData">
+            <div class="data">
+              <p class="titelWeather">
+                <i
+                  class="fa-solid fa-temperature-three-quarters fa-2xs"
+                  style="color: #e81717"
+                ></i>
+                <span name="maxTemp" class="maxTemp">5</span>°-
+                <span name="minTemp" class="minTemp">3</span>°
+                <i
+                  class="fa-solid fa-temperature-three-quarters fa-2xs"
+                  style="color: #141cff"
+                ></i>
+              </p>
+              <div class="addings">
+                <div class="item">
+                  <i class="fa-regular fa-clock"></i>
+                  <span id="pressure">Luftdruck</span>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-water"></i>
+                  <span id="humadity">Luftfeuchtigkeit</span>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-wind"></i>
+                  <span id="speed">Geschwindigkeit</span>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-sun"></i>
+                  <span id="sunrise">Sonnenaufgang</span>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-moon"></i>
+                  <span id="sunset">Sonnenuntergang</span>
+                </div>
+              </div>
+            </div>
+            <div class="content_right">
+              <img
+                src="8918181.png"
+                id="picture"
+                alt=""
+                width="100"
+                height="100"
+              />
+              <p class="temp">5</p>
+              <p class="description">Regen</p>
+            </div>
+          </div>
+        </div>
+        <!--<div class="card">3 Tage</div>-->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

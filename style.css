@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  padding-right: 0.5rem;
+}
+
+span {
+  padding: 0 0.5rem;
+}
+/*------------HEADER----------*/
+header {
+  font-family: "Lobster", sans-serif;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: rgb(192, 255, 250);
+  background: radial-gradient(
+    circle,
+    rgba(192, 255, 250, 1) 0%,
+    rgba(198, 247, 243, 1) 44%,
+    rgba(80, 222, 251, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 3rem;
+}
+.logo {
+  text-align: center;
+}
+.wolke1 {
+  animation: move2 10s ease;
+}
+
+.wolke2 {
+  animation: move 10s ease;
+}
+
+/*------------SEARCHBAR----------*/
+
+.serachBar {
+  text-align: center;
+}
+
+input {
+  min-width: 40%;
+  width: 40%;
+  border-radius: 12px;
+  height: 2rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/*------------Content----------*/
+
+.content {
+  font-family: "Roboto", sans-serif;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+  min-width: 300px;
+  max-width: 550px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.date {
+  background-color: azure;
+  height: 30px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.titelWeather {
+  font-size: 2rem;
+  text-align: left !important;
+}
+
+.weatherData {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.minTemp {
+  color: gray;
+}
+
+.city {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.temp {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.content_right {
+  text-align: center;
+}
+
+.disable {
+  display: none;
+}
+
+.animation {
+  animation: flyin 3s ease;
+}
+
+.addings {
+  padding-top: 1rem;
+}
+
+.item {
+  padding: 0.5rem;
+}
+
+/*------------Animation----------*/
+
+@keyframes move {
+  0% {
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes flyin {
+  0% {
+    transform: translateX(-800px);
+  }
+}
