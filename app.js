@@ -102,16 +102,8 @@ const setForecast = (forecast) => {
     const date = document.createElement("div");
     const data = document.createElement("div");
     const description = document.createElement("p");
-    const temp = document.createElement("p");
-    temp.innerHTML = `                <i
-    class="fa-solid fa-temperature-three-quarters fa-2xs"
-    style="color: #141cff"
-  ></i>${item.main.temp_max.toFixed(1)}  -  ${item.main.temp_min.toFixed(
-      1
-    )}                 <i
-  class="fa-solid fa-temperature-three-quarters fa-2xs"
-  style="color: #e81717"
-></i>`;
+    const temp = document.createElement("h2");
+    temp.innerText = `${item.main.temp.toFixed(1)} °`;
     const dateOriginal = new Date(item.dt_txt);
     console.log(dateOriginal);
     date.innerText = `${dateOriginal.getDate()}.${
