@@ -146,4 +146,8 @@ input {
   .prognose_box {
     width: 100%;
   }
+
+  #map {
+    height: 150px;
+  }
 }
