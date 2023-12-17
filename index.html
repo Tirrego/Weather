@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script
       src="https://kit.fontawesome.com/76ad6589c7.js"
       crossorigin="anonymous"
@@ -14,25 +25,19 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="wolke1">
-          <img class="wolke" src="8918181.png" alt="" />
-        </div>
         <div class="logo">
           <h1>Better<span>Weather</span></h1>
           <h2>We love weather</h2>
         </div>
-        <div class="wolke2">
-          <img class="wolke" src="8918181.png" alt="" />
-        </div>
       </header>
       <div class="serachBar">
         <form action="" name="form">
-          <input type="search" placeholder="City or Zipcode...." />
+          <input type="search" placeholder="Type in the city..." />
           <i class="fa-solid fa-magnifying-glass fa-beat-fade fa-lg"></i>
         </form>
       </div>
 
-      <div class="content disable">
+      <div class="content">
         <div class="card">
           <div class="date">
             <p>
@@ -89,8 +94,9 @@
             </div>
           </div>
         </div>
-        <!--<div class="card">3 Tage</div>-->
+        <div class="" id="map"></div>
       </div>
+      <div class="prognose"></div>
     </div>
     <script src="app.js"></script>
   </body>

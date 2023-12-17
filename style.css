@@ -18,9 +18,7 @@ span {
 header {
   font-family: "Lobster", sans-serif;
   display: flex;
-  height: 300px;
   justify-content: center;
-  align-items: center;
 }
 
 body {
@@ -37,17 +35,15 @@ h1 {
   font-size: 3rem;
 }
 .logo {
+  margin-top: 1.5rem;
   text-align: center;
-}
-
-.wolke {
-  max-width: 350px;
 }
 
 /*------------SEARCHBAR----------*/
 
 .serachBar {
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 input {
@@ -66,14 +62,11 @@ input {
   margin-top: 3rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
 .card {
-  height: 300px;
   background-color: rgba(255, 255, 255, 0.4);
-  min-width: 300px;
-  max-width: 550px;
+  max-width: 500px;
   flex-shrink: 1;
   flex-grow: 1;
 }
@@ -118,10 +111,6 @@ input {
   display: none;
 }
 
-.animation {
-  animation: flyin 3s ease;
-}
-
 .addings {
   padding-top: 1rem;
 }
@@ -129,43 +118,32 @@ input {
 .item {
   padding: 0.5rem;
 }
+/*------------MAP----------*/
+#map {
+  height: 300px;
+  width: 600px;
+}
+/*------------Prognose----------*/
 
-/*------------Animation----------*/
-
-@keyframes move {
-  0% {
-    transform: translateX(-300px);
-  }
+.prognose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes move2 {
-  0% {
-    transform: translateX(300px);
-  }
+.prognose_box {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 1rem;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-@keyframes flyin {
-  0% {
-    transform: translateX(-800px);
-  }
-}
-
-@media (max-width: 800px) {
-  header {
-    display: block;
-  }
-
-  input {
-    margin-top: 4rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .wolke1 {
-    animation: move2 10s ease;
-  }
-
-  .wolke2 {
-    animation: move 10s ease;
+@media (max-width: 900px) {
+  .prognose_box {
+    width: 100%;
   }
 }
